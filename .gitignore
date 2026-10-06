@@ -1,0 +1,25 @@
+# PHP
+/vendor/
+composer.lock
+composer.phar
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Runtime
+cache/
+tmp/
+temp/

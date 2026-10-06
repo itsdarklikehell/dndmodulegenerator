@@ -1,8 +1,59 @@
-# dndmodulegenerator
+# D&D Module Generator
 
-I got deeply bored rolling out all this stuff by hand and taking it down with pen and paper for my group every week or 
-so, so I hacked together this copy of data from the DMG -some with a little twist- and wired up a little random-selection
-and concatenation. It's nothing special, but it presents data in a coherent way and lets me get my players on their way
-with about twenty minutes of prep (at this point, it's mostly building and reskinning the encounters that takes the most
-time --and just watch for a generator for that, too!) rather than several hours while I agonize over the relative merits 
-of two almost-identical options.
+A PHP-based tool for generating random D&D adventure modules, NPCs, villains, settlements, and locales. Built to speed up DM prep time from hours to minutes.
+
+## Features
+
+- **Adventure Generator** - Creates complete adventure outlines with patrons, villains, goals, complications, twists, and climaxes
+- **NPC Generator** - Generates NPCs with appearance, abilities, talents, mannerisms, and backstory elements
+- **Villain Generator** - Creates villains with schemes, methods, actions, and weaknesses
+- **Settlement Generator** - Generates settlements with rulers, features, and current events
+- **Locale Generator** - Creates locales with odd features and strange characteristics
+
+## Requirements
+
+- PHP 7.4+
+- Web server (Apache/Nginx) or PHP built-in server
+
+## Installation
+
+```bash
+git clone https://github.com/itsdarklikehell/dndmodulegenerator.git
+cd dndmodulegenerator
+```
+
+## Usage
+
+### Web Interface
+
+Place the `site/` directory in your web server's document root and navigate to it:
+
+```bash
+# Using PHP built-in server
+cd site
+php -S localhost:8000
+```
+
+Then open http://localhost:8000 in your browser.
+
+### CLI
+
+```bash
+php basicGenerator.php
+```
+
+## Project Structure
+
+- `site/` - Web interface
+  - `adventureGenerator/` - Adventure generation
+  - `npcGenerator/` - NPC generation
+  - `villainGenerator/` - Villain generation
+  - `settlementGenerator/` - Settlement generation
+  - `localeGenerator/` - Locale generation
+- `lists/` - Data lists for generators
+- `raw lists/` - Raw data lists
+- `outputScripts/` - Example output
+
+## License
+
+MIT
